@@ -19,8 +19,7 @@ public class SubscriberServiceImpl implements SubscriberService{
         int index = 0;
         for (Subscriber subscriber : subscribers) {
             if (subscriber.getCityCallDuration() > duration) {
-                result[index] = subscriber;
-                index++;
+                result[index++] = subscriber;
             }
         }
 
@@ -40,8 +39,7 @@ public class SubscriberServiceImpl implements SubscriberService{
         int index = 0;
         for (Subscriber subscriber : subscribers) {
             if (subscriber.getIntercityCallDuration() > 0) {
-                result[index] = subscriber;
-                index++;
+                result[index++] = subscriber;
             }
         }
 
@@ -61,8 +59,7 @@ public class SubscriberServiceImpl implements SubscriberService{
         int index = 0;
         for (Subscriber subscriber : subscribers) {
             if (subscriber.getLastName().startsWith(lastNameStartsWith)) {
-                result[index] = subscriber;
-                index++;
+                result[index++] = subscriber;
             }
         }
 
